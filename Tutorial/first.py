@@ -49,6 +49,6 @@ train = optimizer.minimize(loss)
 sess.run(init) #reset
 for i  in range(1000):
     sess.run(train, {x: [1, 2, 3, 4], y: [0, -1, -2, -3]})
-    writer = tf.summary.FileWriter("C:/temp/Tensorflow/Logs", graph=tf.get_default_graph())
+    #writer = tf.summary.FileWriter("C:/temp/Tensorflow/Logs", graph=tf.get_default_graph())
 
 print(sess.run([W, b]))
